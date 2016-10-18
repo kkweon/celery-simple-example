@@ -9,7 +9,10 @@ def add(x, y):
     print("{} + {} = {}".format(x, y, x+y))
     return x + y
 
-
+@app.task
+def xsum(numbers):
+    return sum(numbers)
+    
 if __name__ == '__main__':
     
     # Basic Example

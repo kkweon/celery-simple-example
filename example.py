@@ -46,6 +46,6 @@ print(res.get())
 # Chord
 # it's called after all of tasks are done
 from celery import chord
-#res = chord((add.s(i, i) for i in range(10)), xsum.s())()
-#print(res.get())
+res = chord((add.s(i, i) for i in range(10)), xsum.s())()
+print(res.get())
 
