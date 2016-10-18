@@ -1,4 +1,4 @@
-from tasks import add
+from tasks import add, xsum
 
 
 # Basic example
